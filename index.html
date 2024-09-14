@@ -7,18 +7,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f7da; /* Light green background color */
+            background-color: green; /* Light green background color */
             margin: 0;
-            padding: 20px;
-            text-align: center;
+            padding: 40px;
+            text-align: left;
         }
         h1 {
-            color: #2e7d32; /* Dark green for the headline */
+            color: white; /* Dark green for the headline */
             font-size: 36px;
             margin-bottom: 20px;
         }
         p {
-            color: #388e3c; /* Medium green for the paragraph text */
+            color: white; /* Medium green for the paragraph text */
             font-size: 18px;
             line-height: 1.6;
             max-width: 600px;
@@ -30,7 +30,7 @@
             margin-bottom: 20px;
         }
         .thank-you {
-            color: #1b5e20; /* Darker green for the thank you message */
+            color: white; /* Darker green for the thank you message */
             font-size: 24px;
             margin-top: 40px;
         }
@@ -42,4 +42,11 @@
     <img src="picture_for_my_web_page.jpg" alt="AI Image">
     <p class="thank-you">Thank you!</p>
 </body>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "23a5fcf9-61c4-4ce6-a47b-99c68ba4e1e1",
+            apiHost: "http://localhost:3000",
+        })
+    </script>
 </html>
